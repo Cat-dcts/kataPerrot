@@ -31,20 +31,20 @@ class ParrotTest {
 	}
 
 	@Test
-	void getSpeedNorwegianBlueParrot_nailed() {
-		Parrot parrot = new NorwegianBlueParrot(0, true);
+	void getSpeedBlueParrot() {
+		Parrot parrot = new BlueParrot();
 		assertEquals(0.0, parrot.getSpeed(), 0.0);
 	}
 
 	@Test
 	void getSpeedNorwegianBlueParrot_not_nailed() {
-		Parrot parrot = new NorwegianBlueParrot(1.5, false);
+		Parrot parrot = new NorwegianParrot(1.5);
 		assertEquals(18.0, parrot.getSpeed(), 0.0);
 	}
 
 	@Test
 	void getSpeedNorwegianBlueParrot_not_nailed_high_voltage() {
-		Parrot parrot = new NorwegianBlueParrot(4, false);
+		Parrot parrot = new NorwegianParrot(4);
 		assertEquals(24.0, parrot.getSpeed(), 0.0);
 	}
 }
