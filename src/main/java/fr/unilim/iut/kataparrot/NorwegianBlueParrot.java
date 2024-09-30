@@ -5,7 +5,8 @@ public class NorwegianBlueParrot extends Parrot{
 	private static final double MAX_SPEED = 24.0;
 
 	public NorwegianBlueParrot(double voltage, boolean isNailed) {
-		super(ParrotTypeEnum.NORWEGIAN_BLUE, voltage, isNailed);
+		super(ParrotTypeEnum.NORWEGIAN_BLUE, isNailed);
+		this.voltage = voltage;
 	}
 	
 	@Override

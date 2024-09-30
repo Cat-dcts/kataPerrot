@@ -3,7 +3,7 @@ package fr.unilim.iut.kataparrot;
 public class EuropeanParrot extends Parrot{
 
 	public EuropeanParrot(int numberOfCoconuts, double voltage, boolean isNailed) {
-		super(ParrotTypeEnum.EUROPEAN, voltage, isNailed);
+		super(ParrotTypeEnum.EUROPEAN, isNailed);
 	}
 
 	@Override

@@ -9,7 +9,7 @@ public class Parrot {
 	protected double voltage;
 	protected boolean isNailed;
 
-	public Parrot(ParrotTypeEnum _type, double voltage, boolean isNailed) {
+	public Parrot(ParrotTypeEnum _type, boolean isNailed) {
 		this.type = _type;
 		this.voltage = voltage;
 		this.isNailed = isNailed;
